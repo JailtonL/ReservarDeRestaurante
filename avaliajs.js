@@ -1,4 +1,4 @@
-/*taca la no final*/
+/*taca la no final do script.js do buscar restaurante*/
 /*referente a tela de avaliação*/
 /*ABRI O MODAL*/
 function abrirBox() {
