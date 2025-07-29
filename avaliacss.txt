@@ -1,3 +1,4 @@
+/*taca la no final*/
 /*caixa odne fica o conteudo */
 .avaliacao-box {
     background-color: #fff;
