@@ -1,3 +1,4 @@
+/*taca la no final*/
 /*referente a tela de avaliação*/
 /*ABRI O MODAL*/
 function abrirBox() {
