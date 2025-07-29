@@ -1,0 +1,66 @@
+ <!--Joga no index de buscarRestaurante depois do footer que deve da bão-->
+    <!-- avaliação -->
+	<button class="btn" onclick="abrirBox()"></button>
+    
+	<div id="telaBox" class="overlay">
+            <div class="avaliacao-box">
+                <h2>Avaliação</h2>
+                    <hr>
+                <div class="container">
+                    <!-- Lado esquerdo -->
+                    <div class="lado-esquerdo">
+                        <div class="logo-nome">
+                            <img src="LogodoRestaurnte.png" alt="Logo" onerror="this.onerror=null; this.src='default.png';">
+                            <strong>Nome do restaurante</strong>
+                        </div>
+                        <div class="criterio">
+                            <div class="estrelas">
+                                <input type="radio" id="comida1" name="comida"  value="5"><label for="comida1">★</label>
+                                <input type="radio" id="comida2" name="comida" value="4"><label for="comida2">★</label>
+                                <input type="radio" id="comida3" name="comida" value="3"><label for="comida3">★</label>
+                                <input type="radio" id="comida4" name="comida" value="2"><label for="comida4">★</label>
+                                <input type="radio" id="comida5" name="comida" value="1"><label for="comida5">★</label>
+                                <span style="margin-left: 10px;">Comida</span>
+                            </div>
+                        </div>
+                        <div class="criterio">
+                            <div class="estrelas">
+                                <!-- 5 estrelas para Ambiente -->
+                                <input type="radio" id="ambiente1" name="ambiente" value="5"><label for="ambiente1">★</label>
+                                <input type="radio" id="ambiente2" name="ambiente" value="4"><label for="ambiente2">★</label>
+                                <input type="radio" id="ambiente3" name="ambiente" value="3"><label for="ambiente3">★</label>
+                                <input type="radio" id="ambiente4" name="ambiente" value="2"><label for="ambiente4">★</label>
+                                <input type="radio" id="ambiente5" name="ambiente" value="1"><label for="ambiente5">★</label>
+                                <span style="margin-left: 10px;">Ambiente</span>
+                            </div>
+                        </div>
+                        <div class="criterio">
+                            <div class="estrelas">
+                                <!-- 5 estrelas para Serviço -->
+                                <input type="radio" id="servico1" name="servico" value="5"><label for="servico1">★</label>
+                                <input type="radio" id="servico2" name="servico" value="4"><label for="servico2">★</label>
+                                <input type="radio" id="servico3" name="servico" value="3"><label for="servico3">★</label>
+                                <input type="radio" id="servico4" name="servico" value="2"><label for="servico4">★</label>
+                                <input type="radio" id="servico5" name="servico" value="1"><label for="servico5">★</label>
+                                <span style="margin-left: 10px;">Serviço</span>
+                            </div>
+                        </div>
+                        <div class="nota-final">
+                            <label><strong>Nota:</strong></label>
+                            <input class="nota" type="text" id="notaMedia" readonly>
+                        </div>
+                    </div>
+                    <!-- Lado direito -->
+                    <div class="lado-direito">
+                        <label for="comentario"><strong>Adicione um comentário</strong></label>
+                        <hr style="text-align:center; border: none; height: 1px; background-color: #ccc; margin: 5px 0;" >
+                        <textarea id="comentario" placeholder="Digite seu comentário..."></textarea>
+                    </div>
+                    
+                </div>
+                <div class="botao-enviar">
+                    <button type="button">ENVIAR</button>
+                </div>
+            </div>
+       
+    </div>

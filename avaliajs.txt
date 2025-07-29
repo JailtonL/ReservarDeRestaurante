@@ -1,0 +1,35 @@
+/*referente a tela de avaliação*/
+/*ABRI O MODAL*/
+function abrirBox() {
+			document.getElementById('telaBox').style.display = 'flex';
+		}
+/*FECHA O MODAL*/
+function fecharBox() {
+			document.getElementById('telaBox').style.display = 'none';
+		}
+const telaBox = document.getElementById('telaBox');
+const avaliacaoBox = document.querySelector('.avaliacao-box');
+/*FECHA A BOX CLICANDO FORA*/
+telaBox.addEventListener('click', (e) => {
+    if (!avaliacaoBox.contains(e.target)) {
+        fecharBox();
+    }
+});
+
+/*ATUALIZA A NOTA*/
+function atualizarNota() {
+	const comida = document.querySelector('input[name="comida"]:checked');
+	const ambiente = document.querySelector('input[name="ambiente"]:checked');
+	const servico = document.querySelector('input[name="servico"]:checked');
+	/*SO ATUALIZA SE AS 3 ESTIVEREM MARCADAS */
+	if (comida && ambiente && servico) {
+		const soma = parseInt(comida.value) + parseInt(ambiente.value) + parseInt(servico.value);
+		const media = soma / 3;
+		document.getElementById('notaMedia').value = media.toFixed(1);
+	}
+}
+
+/*SE MUDAR A ESTRELA QUE FOI MARCADA RECALCULA A NOTA */
+document.querySelectorAll('input[type="radio"]').forEach(radio => {
+	radio.addEventListener('change', atualizarNota);
+});
